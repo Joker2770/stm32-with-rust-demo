@@ -1,0 +1,6 @@
+$ mkdir -p "D:\\keyou_data\\dev\\stm32f103c8t6x-ssd1306-hello\\target\\thumbv7m-none-eabi\\release\\build\\az-248da83ff47a599b\\out\\try_track_caller"
+$ cd "D:\\keyou_data\\dev\\stm32f103c8t6x-ssd1306-hello\\target\\thumbv7m-none-eabi\\release\\build\\az-248da83ff47a599b\\out\\try_track_caller"
+$ printf '%s' "// try_tra"... > "D:\\keyou_data\\dev\\stm32f103c8t6x-ssd1306-hello\\target\\thumbv7m-none-eabi\\release\\build\\az-248da83ff47a599b\\out\\try_track_caller\\try_track_caller.rs"
+$ "rustc" "try_track_caller.rs" "--emit=dep-info,metadata" >& /dev/null
+cargo:rustc-cfg=track_caller
+$ rm -r "D:\\keyou_data\\dev\\stm32f103c8t6x-ssd1306-hello\\target\\thumbv7m-none-eabi\\release\\build\\az-248da83ff47a599b\\out\\try_track_caller"

@@ -1,0 +1,1 @@
+I2CInterface<((stm32f1xx_hal::gpio::Pin<'B', 8, stm32f1xx_hal::gpio::Alternate<stm32f1xx_hal::gpio::OpenDrain>>, stm32f1xx_hal::gpio::Pin<'B', 9, stm32f1xx_hal::gpio::Alternate<stm32f1xx_hal::gpio::OpenDrain>>), stm32f1xx_hal::i2c::Mode, &Clocks)>
