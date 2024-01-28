@@ -16,6 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Sys-Dependencies
+      run: sudo apt-get install -y libudev-dev
     - name: Dependencies
       run: cargo install probe-rs --features cli
     - name: Toolchain
