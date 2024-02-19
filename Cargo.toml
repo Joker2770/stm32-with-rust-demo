@@ -1,5 +1,5 @@
 [package]
-name = "stm32f103c8t6x-ssd1306-hello"
+name = "stm32f429vetx-mcp9808-temperature-test-rs"
 version = "0.1.0"
 authors = ["Joker2770 <1214220480@qq.com>"]
 edition = "2021"
@@ -7,12 +7,16 @@ edition = "2021"
 [dependencies]
 cortex-m = "0.7"
 cortex-m-rt = "0.7"
+embedded-hal = "1.0.0"
 panic-halt = "0.2.0"
-ssd1306 = "0.8.4"
+rtt-target = "0.5.0"
 
-[dependencies.stm32f1xx-hal]
-version = "0.10.0"
-features = ["stm32f103", ]
+[dependencies.mcp9808]
+git = "https://github.com/Joker2770/mcp9808-rs"
+
+[dependencies.stm32f4xx-hal]
+version = "0.20.0"
+features = ["stm32f429", ]
 
 # Set the default for dependencies.
 [profile.dev.package."*"]

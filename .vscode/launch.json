@@ -7,12 +7,14 @@
             "request": "launch",
             "name": "probe-rs-debugger",
             // "server": "127.0.0.1:50001", // For connecting to an existing probe-rs-debugger process
-            "chip": "STM32F103C8Tx",
+            "chip": "STM32F429VETx",
             "cwd": "${workspaceFolder}",
             "coreConfigs": [
                 {
+                    //!MODIFY
+                    "programBinary": ".\\target\\thumbv7em-none-eabihf\\release\\stm32f429vetx-mcp9808-temperature-test-rs",
                     "coreIndex": 0,
-                    "svdFile": "stm32f103.svd.patched",
+                    // "svdFile": "stm32f429.svd.patched",
                     "rttEnabled": true,
                     "rttChannelFormats": [
                         {

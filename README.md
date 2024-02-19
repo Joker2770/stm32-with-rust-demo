@@ -1,6 +1,6 @@
-# `stm32-with-rust-demo`
+# `stm32-template`
 
-[![Rust](https://github.com/Joker2770/stm32-with-rust-demo/actions/workflows/rust.yml/badge.svg)](https://github.com/Joker2770/stm32-with-rust-demo/actions/workflows/rust.yml)
+> A template for building applications for STM32 microcontrollers
 
 ## Dependencies
 
